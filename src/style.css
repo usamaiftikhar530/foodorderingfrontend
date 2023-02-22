@@ -1,0 +1,659 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    
+    
+}
+
+/* Top Navigation Bar Styling */
+.navBar{
+    /* background-color: yellow; */
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+.menuBars{
+    width: 60px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    display: none;
+}
+.menuBars a{
+    color: rgb(49, 49, 49);
+}
+.menuBars i{
+    font-size: 2.5rem;
+}
+.navBar .logoName{
+    /* background-color: red; */
+}
+.logoName a{
+    font-size: 3rem;
+    color: black;
+    text-decoration: none;
+    margin-top: 20%;
+}
+.cartIcon{
+    position: absolute;
+    right: 5%;
+    top: 38%;
+}
+.cartIcon i{
+    font-size: 2.5rem;
+    color: black;
+}
+/* .navBox{
+    display: none;
+} */
+.navBar ul{
+    display: flex;
+    justify-content: center;
+}
+.navLink{
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin: 10px 30px;
+}
+.navLink a{
+    text-decoration: none;
+    color: black;
+}
+.imgSlider{
+    background: url(../public/Food1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.subMenu{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    display: none;
+}
+.subMenu#active{
+    display: flex;
+}
+.subMenuBox ul{
+    margin-right: 150px;
+    flex-direction:column;
+    list-style-type: none;
+    text-decoration: none;
+}
+.subMenuBox ul p{
+    font-weight: bold;
+}
+.subMenuBox ul li{
+    margin: 5px 0px;
+}
+
+
+/* Side Bar Menu */
+.sideBar{
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    top: 0px;
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
+.sideBar#active{
+    display: block;
+}
+.sideLinkContainer{
+    margin-top: 40%;
+}
+.sideLinkMain{
+    margin-top: 10%;
+    text-align: start;
+    padding: 0px 20px;
+}
+.sideLinkMain .pizzaList{
+    display: none;
+}
+.sideLinkMain .burgerList{
+    display: none;
+}
+.sideLinkMain .dessertList{
+    display: none;
+}
+.sideLinkMain .drinkList{
+    display: none;
+}
+
+.sideLinkMain .dropIcon{
+    font-size: 3rem;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    color: rgb(65, 65, 65);
+}
+.sideLinkMain .upIcon{
+    font-size: 3rem;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+    color: rgb(65, 65, 65);
+}
+
+.sideLinkMain a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+.sideLinkMain ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+}
+.sideLinkMain li{
+    margin-top: 10px;
+   
+}
+.sideLinkMain li a{
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 50%;
+    margin-left: -10%;
+}
+.sideCross{
+    position:absolute;
+    right: 10%;
+    top: 20px;
+}
+.sideCross i{
+    font-size: 3rem;
+    color: rgb(106, 106, 106);
+}
+
+/* Menu Section */
+.menu{
+    margin-top: 30px;
+    text-align: center;
+}
+.menu h1{
+
+}
+.menu ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li{
+    list-style-type: none;
+    padding-left: 30px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-weight:500;
+}
+.menu ul li a.active{
+    background-color: rgb(36, 36, 36);
+    padding: 5px 20px;
+    border-radius: 30%;
+    color: white;
+}
+.menu ul li a:hover{
+    background-color: rgb(36, 36, 36);
+    padding: 5px 20px;
+    border-radius: 30%;
+    color: white;
+}
+.menu .container{
+    margin-top: 40px;
+    /* width: 40%; */
+}
+.menu .row{
+    justify-content: center;
+}
+
+.menuBox{
+    height: 300px;
+    border-radius: 15px;
+    background-color: rgb(15, 26, 44);
+    margin: 10px;
+    position: relative;
+    color: white;
+}
+.menuBox .menuBoxImg{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 35px;
+    overflow: hidden;
+}
+.menuBox .menuBoxImg img{
+    width: 100%;
+    height: 100%;
+}
+.menuBox .menuBoxContent{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 35%;
+    width: 100%;
+}
+.menuBoxContent h3{
+    /* padding-top: 10px; */
+}
+.menuBoxContent p{
+    position: absolute;
+    width: 30px;
+    left: 15px;
+    bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(239, 239, 239);
+}
+.menuBoxContent button{
+    padding: 5px 25px;
+    border: none;
+    background-color: rgb(246, 246, 12);
+    color:  rgb(15, 26, 44);
+    font-weight: bolder;
+    border-radius: 20px;
+    right: 10px;
+    bottom: 20px;
+    position: absolute;
+}
+
+/* Footer Styling */
+.footerSection{
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(15, 26, 44);;
+}
+.footerSection .row{
+    justify-content: space-between;
+}
+.footerBox{
+    height: 300px;
+}
+.footerBox .content{
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+.footerBox .content h3{
+    margin-left: 20px;
+}
+.footerBox .content ul{
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footerBox .content ul li{
+    margin-top: 10px;
+}
+.footerBox .content ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Product Page Styling */
+.productContainer{
+    margin-top: 10px;
+}
+.productContainer .row{
+    justify-content: space-between;
+}
+.productContainer .productBox{
+    border-radius: 20px;
+}
+.productBox .productImg{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.productImg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.productBox .productContent{
+    padding: 35px;
+}
+.productContent h1{
+    font-weight: bold;
+} 
+.productContent .category{
+    color: #fe8629;
+    font-weight: bold;
+}
+.productContent .productQuantity{
+    margin-top: 40px;
+    background-color: rgb(236, 236, 236);
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+.productQuantity{
+    position: relative;
+}
+.productQuantity h3{
+    position: absolute;
+    left: 85px;
+    top: 2px;
+    font-weight: bold;
+}
+.productQuantity .plusIcon{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 2rem;
+    color: #fe8629;
+    cursor: pointer;
+}
+.productQuantity .minusIcon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 2rem;
+    color: #fe8629;
+    cursor: pointer;
+}
+.productContent button{
+    margin-top: 30px;
+    padding: 15px 100px;
+    border: none;
+    background-color: #fe8629;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Cart Styling */
+.cart{
+    margin-top: 60px;
+}
+.cartBox{
+    /* background-color: red; */
+    border-radius: 20px;
+}
+.cartProductContainer{
+    /* background-color: red; */
+}
+.cartProductBox{
+    position: relative;
+    border-bottom: 4px dotted rgb(124, 124, 124);
+    padding-bottom: 20px;
+    /* background-color: red; */
+}
+.cartProductBox .cartImg{
+    width: 20%;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.cartProductBox .cartImg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cartProductBox h4{
+    color: black;
+    position: absolute;
+    top: 0%;
+    left: 23%;
+}
+.cartProductBox button{
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    border: none;
+    background-color: #fe8629;
+    border-radius: 10px;
+    padding: 4px 8px;
+    color: white;
+}
+.cartProductBox .priceTag{
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    width: 60px;
+    height: 30px;
+    font-size: 1.5rem;
+}
+.cartProductBox .discountPrice{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    width: 60px;
+    height: 30px;
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: rgb(255, 47, 47);
+}
+.cartProductBox .cartQuantity{
+    width: 200px;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+
+.totalAmountContainer{
+    padding: 20px;
+}
+.totalAmountContainer h3{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.totalAmountContainer .amountRow{
+    display: flex;
+    justify-content: space-between;
+}
+.totalAmountContainer hr{
+    margin-bottom: 30px;
+}
+.totalAmountContainer button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+
+
+/* Registration Form Styling */
+
+.wrapper{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    margin-top: -5%;
+  }
+  .registration_form{
+    border-radius: 5px;
+    width: 400px;
+    background: rgb(243, 243, 243);
+    padding: 25px;
+  }
+  .registration_form .title{
+    color: white;
+    background:#fe8629;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: -25px;
+    margin-left:-25px;
+    margin-right:-25px;
+  }
+  .form_wrap{
+    margin-top: 35px;
+  }
+  .form_wrap .input_wrap{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .form_wrap .input_wrap input{
+    width: 100%;
+  }
+  .form_wrap .input_wrap:last-child{
+    margin-bottom: 0;
+  }
+  .form_wrap .input_wrap label{
+    margin-bottom: 3px;
+    color: #1a1a1f;
+    display: block;
+  }
+  .form_wrap .input_grp{
+    display: flex;
+    justify-content: space-between;
+  }
+  .form_wrap .input_grp  input[type=”text”]{
+    width: 165px;
+  }
+  .form_wrap  input[type=”text”]{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 3px;
+    border: 1.3px solid #9597a6;
+  }
+  .form_wrap  input[type=”text”]:focus{
+    border-color: #063abd;
+  }
+  .form_wrap .submit_btn{
+    font-size:17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 100%;
+    background: #fe8629;
+    padding: 10px;
+    border: 0;
+    color:white;
+  }
+  .form_wrap .submit_btn:hover{
+    background: #fe8629;
+  }
+  .form_wrap h4{
+    color: red;
+    text-align: center;
+  }
+
+
+  /* About Us Page Styling */
+
+  .about-us{
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background: #ddd;
+  }
+  .pic{
+    height: auto;
+    width:  302px;
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #4070f4;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+  .hire{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .hire:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Quries */
+@media screen and (max-width: 1200px) {
+    .subMenuBox ul{
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logoName a{
+        font-size: 2rem;
+    }
+    .menuBars{
+        display: block;
+    }
+    .navBox{
+        display: none;
+    }
+    .navBar{
+        padding-bottom: 40px;
+    }
+    .subMenu{
+        display: none;
+    }
+}
