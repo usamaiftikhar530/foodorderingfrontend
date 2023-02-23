@@ -33,7 +33,7 @@ const url = 'https://foodorderingbackend.adaptable.app';
     const pN= ProductData.find((item)=> item.id==index);
     const productName = pN.name;
 
-    const res = await fetch("https://foodorderingbackend.adaptable.app/cart",{
+    const res = await fetch("/api/cart",{
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -16,7 +16,7 @@ function Contact() {
 
   const callContactPage = async () => {
     try {
-      const res = await fetch("https://foodorderingbackend.adaptable.app/getdata", {
+      const res = await fetch("/api/getdata", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -51,7 +51,7 @@ function Contact() {
 
     const { name, email, message } = userData;
 
-    const res = await fetch("https://foodorderingbackend.adaptable.app/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

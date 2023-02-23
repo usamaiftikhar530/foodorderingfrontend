@@ -15,7 +15,7 @@ function About() {
 
   const callAboutPage = async () => {
     try {
-      const res = await fetch("https://foodorderingbackend.adaptable.app/about", {
+      const res = await fetch("/api/about", {
         method: "GET",
         headers: {
           Accept: "application/json",

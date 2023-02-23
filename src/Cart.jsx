@@ -19,7 +19,7 @@ function Cart() {
   //Delete Product POST Method
   const delCartProduct = async (productName) => {
     try {
-      const res = await fetch("https://foodorderingbackend.adaptable.app/cart", {
+      const res = await fetch("/api/cart", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function Cart() {
 
   const callCartPage = async () => {
     try {
-      const res = await fetch("https://foodorderingbackend.adaptable.app/cart", {
+      const res = await fetch("/api/cart", {
         method: "GET",
         headers: {
           Accept: "application/json",
