@@ -9,7 +9,7 @@ function Logout(){
     const navigate = useNavigate();
 
     useEffect(()=>{
-        fetch(url+"/logout",{
+        fetch("/logout",{
             method: "GET",
             headers: {
                 Accept: "application/json",
