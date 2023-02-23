@@ -9,7 +9,7 @@ function Logout(){
     const navigate = useNavigate();
 
     useEffect(()=>{
-        fetch("/logout",{
+        fetch("https://foodorderingbackend.adaptable.app/logout",{
             method: "GET",
             headers: {
                 Accept: "application/json",

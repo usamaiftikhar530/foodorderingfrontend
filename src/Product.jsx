@@ -26,7 +26,7 @@ function Product() {
     const pN= ProductData.find((item)=> item.id==index);
     const productName = pN.name;
 
-    const res = await fetch("/cart",{
+    const res = await fetch("https://foodorderingbackend.adaptable.app/cart",{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
