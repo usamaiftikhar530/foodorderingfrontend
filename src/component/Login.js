@@ -13,7 +13,7 @@ function Login() {
   const LoginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch(url+"/signin", {
+    const res = await fetch("https://foodorderingbackend.adaptable.app/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
