@@ -19,7 +19,7 @@ function Cart() {
   //Delete Product POST Method
   const delCartProduct = async (productName) => {
     try {
-      const res = await fetch("/api/cart", {
+      const res = await fetch(`${process.env.api_key}/api/cart`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
